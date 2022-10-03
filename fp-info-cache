@@ -1,4 +1,4 @@
-17012054335659940
+17017037913158940
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75390,6 +75390,13 @@ Ferrite-Tube-Splitter-SMD
 5
 5
 xenir
+Ferrite-Tube-Transformer-SMD
+
+
+0
+4
+4
+xenir
 Heatsink_Mounting_25mm
 
 
@@ -75558,6 +75565,13 @@ T50_Inductor
 2
 2
 xenir
+T50_Transformer
+
+
+0
+4
+4
+xenir
 T092
 
 
@@ -75573,6 +75587,13 @@ TINYpico
 19
 xenir
 TO-220-Horizontal
+
+
+0
+3
+3
+xenir
+TO-220-Horizontal-RD-Mosfet
 
 
 0

@@ -11621,85 +11621,9 @@ Wire Wire Line
 	6700 7350 6700 7100
 Wire Wire Line
 	6700 7100 6850 7100
-$Comp
-L Transistor_BJT:2N3904 Q1
-U 1 1 6287DEE6
-P 3925 6025
-F 0 "Q1" H 4115 6071 50  0000 L CNN
-F 1 "2N3904" H 4115 5980 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4125 5950 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3925 6025 50  0001 L CNN
-	1    3925 6025
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:2N3904 Q2
-U 1 1 6287F786
-P 3925 6850
-F 0 "Q2" H 4115 6804 50  0000 L CNN
-F 1 "2N3904" H 4115 6895 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4125 6775 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3925 6850 50  0001 L CNN
-	1    3925 6850
-	1    0    0    1   
-$EndComp
-Text GLabel 3225 6025 0    50   Input ~ 0
-DTR
-Text GLabel 3225 6850 0    50   Input ~ 0
-RTS
-$Comp
-L esp32-a1s-rescue:Resistor-Xenir R101
-U 1 1 62884B2D
-P 3525 6025
-F 0 "R101" H 3525 6179 28  0000 C CNN
-F 1 "Resistor" H 3525 6122 28  0000 C CNN
-F 2 "xenir:Resistor 0805" H 3525 5925 50  0001 C CNN
-F 3 "" H 3525 5925 50  0001 C CNN
-	1    3525 6025
-	1    0    0    -1  
-$EndComp
-$Comp
-L esp32-a1s-rescue:Resistor-Xenir R102
-U 1 1 628852B4
-P 3525 6850
-F 0 "R102" H 3525 7004 28  0000 C CNN
-F 1 "Resistor" H 3525 6947 28  0000 C CNN
-F 2 "xenir:Resistor 0805" H 3525 6750 50  0001 C CNN
-F 3 "" H 3525 6750 50  0001 C CNN
-	1    3525 6850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3225 6025 3325 6025
-Wire Wire Line
-	3225 6850 3275 6850
-Wire Wire Line
-	4025 6225 4025 6350
-Wire Wire Line
-	4025 6350 3275 6350
-Wire Wire Line
-	3275 6350 3275 6850
-Connection ~ 3275 6850
-Wire Wire Line
-	3275 6850 3325 6850
-Wire Wire Line
-	3325 6025 3325 6500
-Wire Wire Line
-	3325 6500 4025 6500
-Wire Wire Line
-	4025 6500 4025 6650
-Connection ~ 3325 6025
-Wire Wire Line
-	4025 5825 4025 5650
-Wire Wire Line
-	4025 5650 4250 5650
-Wire Wire Line
-	4025 7050 4025 7225
-Wire Wire Line
-	4025 7225 4275 7225
-Text GLabel 4250 5650 2    50   Input ~ 0
+Text GLabel 3950 4750 2    50   Input ~ 0
 EN
-Text GLabel 4275 7225 2    50   Input ~ 0
+Text GLabel 4125 7025 2    50   Input ~ 0
 IO0
 $Comp
 L Switch:SW_DIP_x01 SW1
@@ -12702,4 +12626,84 @@ Text GLabel 6600 7950 2    50   Input ~ 0
 SCL
 Text GLabel 6600 8050 2    50   Input ~ 0
 SDA
+$Comp
+L xenir:2N3904-SMD Q?
+U 1 1 63749133
+P 3600 5050
+F 0 "Q?" H 3691 4946 50  0000 L CNN
+F 1 "2N3904-SMD" H 3691 4855 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3700 4825 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 3500 4900 50  0001 L CNN
+	1    3600 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 5000 3600 4750
+Wire Wire Line
+	3600 4750 3950 4750
+$Comp
+L esp32-a1s-rescue:Resistor-Xenir R?
+U 1 1 637D5201
+P 3100 5200
+F 0 "R?" H 3100 5354 28  0000 C CNN
+F 1 "10k" H 3100 5297 28  0000 C CNN
+F 2 "xenir:Resistor 0805" H 3100 5100 50  0001 C CNN
+F 3 "" H 3100 5100 50  0001 C CNN
+	1    3100 5200
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 5200 0    50   Input ~ 0
+DTR
+Wire Wire Line
+	2750 5200 2850 5200
+$Comp
+L esp32-a1s-rescue:Resistor-Xenir R?
+U 1 1 63814A82
+P 3100 5950
+F 0 "R?" H 3100 6104 28  0000 C CNN
+F 1 "10k" H 3100 6047 28  0000 C CNN
+F 2 "xenir:Resistor 0805" H 3100 5850 50  0001 C CNN
+F 3 "" H 3100 5850 50  0001 C CNN
+	1    3100 5950
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 5950 0    50   Input ~ 0
+RTS
+Wire Wire Line
+	2750 5950 2800 5950
+$Comp
+L xenir:2N3904-SMD Q?
+U 1 1 63824306
+P 3600 6100
+F 0 "Q?" H 3691 5904 50  0000 L CNN
+F 1 "2N3904-SMD" H 3691 5995 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3700 5875 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 3500 5950 50  0001 L CNN
+	1    3600 6100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2850 5550 3600 5550
+Wire Wire Line
+	3600 5550 3600 5750
+Wire Wire Line
+	2850 5200 2850 5550
+Connection ~ 2850 5200
+Wire Wire Line
+	2850 5200 2900 5200
+Wire Wire Line
+	2800 5950 2800 5500
+Wire Wire Line
+	2800 5500 3600 5500
+Wire Wire Line
+	3600 5500 3600 5400
+Connection ~ 2800 5950
+Wire Wire Line
+	2800 5950 2900 5950
+Text GLabel 3950 6400 2    50   Input ~ 0
+IO
+Wire Wire Line
+	3600 6400 3950 6400
+Wire Wire Line
+	3600 6150 3600 6400
 $EndSCHEMATC
