@@ -11621,72 +11621,7 @@ Wire Wire Line
 	6700 7350 6700 7100
 Wire Wire Line
 	6700 7100 6850 7100
-$Comp
-L Transistor_BJT:2N3904 Q2
-U 1 1 6287F786
-P 3775 6650
-F 0 "Q2" H 3965 6604 50  0000 L CNN
-F 1 "2N3904" H 3965 6695 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3975 6575 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3775 6650 50  0001 L CNN
-	1    3775 6650
-	1    0    0    1   
-$EndComp
-Text GLabel 3075 5825 0    50   Input ~ 0
-DTR
-Text GLabel 3075 6650 0    50   Input ~ 0
-RTS
-$Comp
-L esp32-a1s-rescue:Resistor-Xenir R101
-U 1 1 62884B2D
-P 3375 5825
-F 0 "R101" H 3375 5979 28  0000 C CNN
-F 1 "Resistor" H 3375 5922 28  0000 C CNN
-F 2 "xenir:Resistor 0805" H 3375 5725 50  0001 C CNN
-F 3 "" H 3375 5725 50  0001 C CNN
-	1    3375 5825
-	1    0    0    -1  
-$EndComp
-$Comp
-L esp32-a1s-rescue:Resistor-Xenir R102
-U 1 1 628852B4
-P 3375 6650
-F 0 "R102" H 3375 6804 28  0000 C CNN
-F 1 "Resistor" H 3375 6747 28  0000 C CNN
-F 2 "xenir:Resistor 0805" H 3375 6550 50  0001 C CNN
-F 3 "" H 3375 6550 50  0001 C CNN
-	1    3375 6650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3075 5825 3175 5825
-Wire Wire Line
-	3075 6650 3125 6650
-Wire Wire Line
-	3875 6025 3875 6150
-Wire Wire Line
-	3875 6150 3125 6150
-Wire Wire Line
-	3125 6150 3125 6650
-Connection ~ 3125 6650
-Wire Wire Line
-	3125 6650 3175 6650
-Wire Wire Line
-	3175 5825 3175 6300
-Wire Wire Line
-	3175 6300 3875 6300
-Wire Wire Line
-	3875 6300 3875 6450
-Connection ~ 3175 5825
-Wire Wire Line
-	3875 5625 3875 5450
-Wire Wire Line
-	3875 5450 4100 5450
-Wire Wire Line
-	3875 6850 3875 7025
-Wire Wire Line
-	3875 7025 4125 7025
-Text GLabel 4100 5450 2    50   Input ~ 0
+Text GLabel 3950 4750 2    50   Input ~ 0
 EN
 Text GLabel 4125 7025 2    50   Input ~ 0
 IO0
@@ -12693,13 +12628,82 @@ Text GLabel 6600 8050 2    50   Input ~ 0
 SDA
 $Comp
 L xenir:2N3904-SMD Q?
-U 1 1 6370B6F7
-P 3500 5200
-F 0 "Q?" H 3591 5196 50  0000 L CNN
-F 1 "2N3904-SMD" H 3591 5105 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3600 5075 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 3400 5150 50  0001 L CNN
-	1    3500 5200
+U 1 1 63749133
+P 3600 5050
+F 0 "Q?" H 3691 4946 50  0000 L CNN
+F 1 "2N3904-SMD" H 3691 4855 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3700 4825 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 3500 4900 50  0001 L CNN
+	1    3600 5050
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3600 5000 3600 4750
+Wire Wire Line
+	3600 4750 3950 4750
+$Comp
+L esp32-a1s-rescue:Resistor-Xenir R?
+U 1 1 637D5201
+P 3100 5200
+F 0 "R?" H 3100 5354 28  0000 C CNN
+F 1 "10k" H 3100 5297 28  0000 C CNN
+F 2 "xenir:Resistor 0805" H 3100 5100 50  0001 C CNN
+F 3 "" H 3100 5100 50  0001 C CNN
+	1    3100 5200
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 5200 0    50   Input ~ 0
+DTR
+Wire Wire Line
+	2750 5200 2850 5200
+$Comp
+L esp32-a1s-rescue:Resistor-Xenir R?
+U 1 1 63814A82
+P 3100 5950
+F 0 "R?" H 3100 6104 28  0000 C CNN
+F 1 "10k" H 3100 6047 28  0000 C CNN
+F 2 "xenir:Resistor 0805" H 3100 5850 50  0001 C CNN
+F 3 "" H 3100 5850 50  0001 C CNN
+	1    3100 5950
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 5950 0    50   Input ~ 0
+RTS
+Wire Wire Line
+	2750 5950 2800 5950
+$Comp
+L xenir:2N3904-SMD Q?
+U 1 1 63824306
+P 3600 6100
+F 0 "Q?" H 3691 5904 50  0000 L CNN
+F 1 "2N3904-SMD" H 3691 5995 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3700 5875 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 3500 5950 50  0001 L CNN
+	1    3600 6100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2850 5550 3600 5550
+Wire Wire Line
+	3600 5550 3600 5750
+Wire Wire Line
+	2850 5200 2850 5550
+Connection ~ 2850 5200
+Wire Wire Line
+	2850 5200 2900 5200
+Wire Wire Line
+	2800 5950 2800 5500
+Wire Wire Line
+	2800 5500 3600 5500
+Wire Wire Line
+	3600 5500 3600 5400
+Connection ~ 2800 5950
+Wire Wire Line
+	2800 5950 2900 5950
+Text GLabel 3950 6400 2    50   Input ~ 0
+IO
+Wire Wire Line
+	3600 6400 3950 6400
+Wire Wire Line
+	3600 6150 3600 6400
 $EndSCHEMATC
