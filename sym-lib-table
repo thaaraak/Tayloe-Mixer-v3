@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Tayloe-Mixer-v2-rescue)(type Legacy)(uri "${KIPRJMOD}/Tayloe Mixer v2-rescue.lib")(options "")(descr ""))
+  (lib (name esp32-a1s-rescue)(type Legacy)(uri /home/xenir/git/esp32-a1s/esp32-a1s-rescue.lib)(options "")(descr ""))
 )
