@@ -1,6 +1,29 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Connector_Jack-DC
+#
+DEF Connector_Jack-DC J 0 40 Y Y 1 F N
+F0 "J" 0 210 50 H V C CNN
+F1 "Connector_Jack-DC" 0 -200 50 H V C CNN
+F2 "" 50 -40 50 H I C CNN
+F3 "" 50 -40 50 H I C CNN
+ALIAS Jack-DC
+$FPLIST
+ BarrelJack*
+$ENDFPLIST
+DRAW
+A -130 100 25 901 -901 0 1 10 F -130 125 -130 75
+A -130 100 25 901 -901 0 1 10 N -130 125 -130 75
+S -200 150 200 -150 0 1 10 f
+S 145 125 -130 75 0 1 10 F
+P 2 0 1 10 200 100 150 100 N
+P 6 0 1 10 -150 -100 -100 -100 -50 -50 0 -100 100 -100 200 -100 N
+X ~ 1 300 100 100 L 50 50 1 1 P
+X ~ 2 300 -100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_R_Small_US
 #
 DEF Device_R_Small_US R 0 10 N N 1 F N
@@ -427,6 +450,93 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
+# preamp-mar6-rescue_Cap_Polarized-xenir
+#
+DEF preamp-mar6-rescue_Cap_Polarized-xenir C 0 40 Y Y 1 F N
+F0 "C" 0 -225 28 H V C CNN
+F1 "preamp-mar6-rescue_Cap_Polarized-xenir" 0 50 28 H V C CNN
+F2 "" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+DRAW
+S -20 -190 -40 -10 1 1 0 N
+S 20 -10 40 -190 1 1 0 F
+P 2 1 1 0 -110 -150 -70 -150 N
+P 2 1 1 0 -90 -170 -90 -130 N
+X ~ 1 -150 -100 110 R 0 0 1 1 P
+X ~ 2 150 -100 110 L 0 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# preamp-mar6-rescue_Capacitor-xenir
+#
+DEF preamp-mar6-rescue_Capacitor-xenir C 0 40 Y Y 1 F N
+F0 "C" 0 125 28 H V C CNN
+F1 "preamp-mar6-rescue_Capacitor-xenir" 0 -125 28 H V C CNN
+F2 "" 0 -150 50 H I C CNN
+F3 "" 0 -150 50 H I C CNN
+DRAW
+P 2 1 1 20 -30 -80 -30 80 N
+P 2 1 1 20 30 -80 30 80 N
+X ~ 1 -150 0 110 R 0 0 1 1 P
+X ~ 2 150 0 110 L 0 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# preamp-mar6-rescue_Inductor-xenir
+#
+DEF preamp-mar6-rescue_Inductor-xenir L 0 40 Y Y 1 F N
+F0 "L" 0 -50 50 H V C CNN
+F1 "preamp-mar6-rescue_Inductor-xenir" 0 100 50 H V C CNN
+F2 "" 0 100 50 H I C CNN
+F3 "" 0 100 50 H I C CNN
+DRAW
+A -75 0 25 1 1799 1 1 0 N -50 0 -100 0
+A -25 0 25 1 1799 1 1 0 N 0 0 -50 0
+A 25 0 25 1 1799 1 1 0 N 50 0 0 0
+A 75 0 25 1 1799 1 1 0 N 100 0 50 0
+X 1 1 -150 0 50 R 0 0 1 1 P
+X 2 2 150 0 50 L 0 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# preamp-mar6-rescue_MAR6-xenir
+#
+DEF preamp-mar6-rescue_MAR6-xenir U 0 40 Y Y 1 F N
+F0 "U" 50 -100 50 H V C CNN
+F1 "preamp-mar6-rescue_MAR6-xenir" 200 100 50 H V C CNN
+F2 "Package_TO_SOT_SMD:SOT-89-3_Handsoldering" 50 -900 50 H I C CNN
+F3 "" 50 -100 50 H I C CNN
+DRAW
+P 4 1 1 10 250 -100 -150 100 -150 -300 250 -100 f
+X ~ 1 -250 -100 100 R 30 30 1 1 I
+X GND 2 -50 -400 150 U 30 30 1 1 W
+X ~ 3 350 -100 100 L 30 30 1 1 O
+X GND 4 -50 200 150 D 30 30 1 1 W
+ENDDRAW
+ENDDEF
+#
+# preamp-mar6-rescue_Resistor-xenir
+#
+DEF preamp-mar6-rescue_Resistor-xenir R 0 40 Y Y 1 F N
+F0 "R" 0 75 28 H V C CNN
+F1 "preamp-mar6-rescue_Resistor-xenir" 0 -75 28 H V C CNN
+F2 "" 0 -100 50 H I C CNN
+F3 "" 0 -100 50 H I C CNN
+DRAW
+P 2 1 1 0 -100 0 -85 40 N
+P 2 1 1 0 -85 40 -60 -40 N
+P 2 1 1 0 -60 -40 -35 40 N
+P 2 1 1 0 -35 40 -10 -40 N
+P 2 1 1 0 -10 -40 15 40 N
+P 2 1 1 0 15 40 40 -40 N
+P 2 1 1 0 40 -40 65 40 N
+P 2 1 1 0 65 40 90 -40 N
+P 2 1 1 0 90 -40 100 0 N
+X 1 1 -200 0 100 R 0 0 1 1 P
+X 2 2 200 0 100 L 0 0 1 1 P
+ENDDRAW
+ENDDEF
+#
 # xenir_2N3904-SMD
 #
 DEF xenir_2N3904-SMD Q 0 0 Y N 1 F N
@@ -576,21 +686,6 @@ X GND 1 -350 -350 100 R 0 50 1 1 W
 X VCC 2 -350 -450 100 R 0 50 1 1 W
 X SDA 3 -350 -550 100 R 0 50 1 1 B
 X SCL 4 -350 -650 100 R 0 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# xenir_MMG3
-#
-DEF xenir_MMG3 U 0 40 Y Y 1 F N
-F0 "U" 0 150 50 H V C CNN
-F1 "xenir_MMG3" 0 250 50 H V C CNN
-F2 "Package_TO_SOT_SMD:SOT-89-3_Handsoldering" 150 350 50 H I C CNN
-F3 "" 0 150 50 H I C CNN
-DRAW
-P 4 1 1 10 250 -100 -150 100 -150 -300 250 -100 f
-X ~ 1 -250 -100 100 R 50 50 1 1 I
-X GND 2 -50 -400 150 U 50 50 1 1 W
-X ~ 3 350 -100 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
