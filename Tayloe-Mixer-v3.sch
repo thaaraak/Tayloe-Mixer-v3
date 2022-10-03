@@ -11254,7 +11254,7 @@ U 1 1 62EB1FF6
 P 10550 1650
 F 0 "U7" H 10550 1892 50  0000 C CNN
 F 1 "AMS1117CD-3.3" H 10550 1801 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 10550 1850 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 10550 1850 50  0001 C CNN
 F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 10650 1400 50  0001 C CNN
 	1    10550 1650
 	1    0    0    -1  
@@ -11589,8 +11589,6 @@ Wire Wire Line
 	6850 7300 7000 7300
 Text GLabel 2600 7450 2    50   Input ~ 0
 EN
-Text GLabel 4275 7225 2    50   Input ~ 0
-IO0
 $Comp
 L Switch:SW_DIP_x01 SW1
 U 1 1 6289472F
@@ -12667,7 +12665,7 @@ Connection ~ 1450 8650
 Wire Wire Line
 	1450 8650 1550 8650
 Text GLabel 2600 9100 2    50   Input ~ 0
-IO
+IO0
 Wire Wire Line
 	2250 9100 2600 9100
 Wire Wire Line
@@ -13511,4 +13509,36 @@ Wire Wire Line
 	6600 2950 6600 3050
 Wire Wire Line
 	7050 1200 7050 1400
+$Comp
+L Connector:Conn_01x07_Female J4
+U 1 1 634014D2
+P 1300 6900
+F 0 "J4" H 1192 6375 50  0000 C CNN
+F 1 "Conn_01x07_Female" H 1192 6466 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 1300 6900 50  0001 C CNN
+F 3 "~" H 1300 6900 50  0001 C CNN
+	1    1300 6900
+	-1   0    0    1   
+$EndComp
+Text GLabel 1500 7200 2    50   Input ~ 0
+DTR
+Text GLabel 1500 7100 2    50   Input ~ 0
+TX0
+Text GLabel 1500 7000 2    50   Input ~ 0
+RX0
+$Comp
+L power:GND #PWR0127
+U 1 1 63404260
+P 1650 6700
+F 0 "#PWR0127" H 1650 6450 50  0001 C CNN
+F 1 "GND" H 1655 6527 50  0000 C CNN
+F 2 "" H 1650 6700 50  0001 C CNN
+F 3 "" H 1650 6700 50  0001 C CNN
+	1    1650 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 6700 1650 6700
+Text GLabel 1500 6600 2    50   Input ~ 0
+RTS
 $EndSCHEMATC
