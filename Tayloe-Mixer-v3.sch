@@ -911,18 +911,6 @@ F 3 "" H 12450 3850 50  0001 C CNN
 	1    12450 3850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Tayloe-Mixer-v2-rescue:Pad-Xenir J2
-U 1 1 5F4876B8
-P 9200 2700
-F 0 "J2" H 9100 2550 50  0000 C CNN
-F 1 "Pad" H 9200 2450 50  0000 C CNN
-F 2 "Xenir:Pad" H 9200 2700 50  0001 C CNN
-F 3 "" H 9200 2700 50  0001 C CNN
-	1    9200 2700
-	1    0    0    -1  
-$EndComp
-Connection ~ 9300 2850
 $Bitmap
 Pos 33350 13700
 Scale 1.000000

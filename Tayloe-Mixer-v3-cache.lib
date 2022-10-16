@@ -273,20 +273,6 @@ X P$V+ 8 -100 300 100 D 50 0 3 0 B
 ENDDRAW
 ENDDEF
 #
-# Tayloe-Mixer-v2-rescue_Pad-Xenir
-#
-DEF Tayloe-Mixer-v2-rescue_Pad-Xenir J 0 40 Y Y 1 F N
-F0 "J" -100 -150 50 H V C CNN
-F1 "Tayloe-Mixer-v2-rescue_Pad-Xenir" 0 0 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 1 1 0 -40 -190 40 -110 N
-P 2 1 1 0 -40 -110 40 -190 N
-X P 1 100 -150 100 L 0 0 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Tayloe-Mixer-v2-rescue_T37_XFRM-Xenir
 #
 DEF Tayloe-Mixer-v2-rescue_T37_XFRM-Xenir T 0 40 Y Y 1 F N
