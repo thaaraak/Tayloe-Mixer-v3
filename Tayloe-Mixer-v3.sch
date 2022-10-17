@@ -446,13 +446,7 @@ Wire Wire Line
 Wire Wire Line
 	5150 5250 5150 5400
 Wire Wire Line
-	5150 5400 4950 5400
-Wire Wire Line
 	5250 5700 5150 5700
-Wire Wire Line
-	5150 5700 5150 5600
-Wire Wire Line
-	4900 5600 5150 5600
 $Comp
 L power:GND #PWR010
 U 1 1 5EAC6CB2
@@ -557,7 +551,6 @@ Wire Wire Line
 	4800 4850 4950 4850
 Wire Wire Line
 	4950 4850 4950 5000
-Connection ~ 4950 5400
 Wire Wire Line
 	4950 5400 4900 5400
 Wire Wire Line
@@ -11392,31 +11385,31 @@ Wire Wire Line
 	4650 8100 4650 8250
 Wire Wire Line
 	4650 8250 5150 8250
-Text GLabel 6250 10000 0    50   Input ~ 0
+Text GLabel 7500 9250 2    50   Input ~ 0
 Q_SIGNAL
-Text GLabel 6250 9750 0    50   Input ~ 0
+Text GLabel 7500 9000 2    50   Input ~ 0
 I_SIGNAL
 $Comp
 L xenir:Capacitor C103
 U 1 1 62B36FA7
-P 6400 9750
-F 0 "C103" H 6400 9900 28  0000 C CNN
-F 1 "1uF" H 6500 9800 28  0000 C CNN
-F 2 "xenir:Capacitor 1206" H 6400 9600 50  0001 C CNN
-F 3 "" H 6400 9600 50  0001 C CNN
-	1    6400 9750
-	1    0    0    -1  
+P 7350 9000
+F 0 "C103" H 7350 8850 28  0000 C CNN
+F 1 "1uF" H 7450 8950 28  0000 C CNN
+F 2 "xenir:Capacitor 1206" H 7350 8850 50  0001 C CNN
+F 3 "" H 7350 8850 50  0001 C CNN
+	1    7350 9000
+	-1   0    0    1   
 $EndComp
 $Comp
 L xenir:Capacitor C104
 U 1 1 62B37510
-P 6400 10000
-F 0 "C104" H 6400 9850 28  0000 C CNN
-F 1 "1uF" H 6500 9950 28  0000 C CNN
-F 2 "xenir:Capacitor 1206" H 6400 9850 50  0001 C CNN
-F 3 "" H 6400 9850 50  0001 C CNN
-	1    6400 10000
-	1    0    0    -1  
+P 7350 9250
+F 0 "C104" H 7350 9400 28  0000 C CNN
+F 1 "1uF" H 7450 9200 28  0000 C CNN
+F 2 "xenir:Capacitor 1206" H 7350 9100 50  0001 C CNN
+F 3 "" H 7350 9100 50  0001 C CNN
+	1    7350 9250
+	-1   0    0    1   
 $EndComp
 Text GLabel 6750 8650 2    50   Input ~ 0
 OUTL
@@ -12524,18 +12517,6 @@ F 3 "" H 3350 7600 50  0001 C CNN
 	1    3350 7600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6750 9250 6950 9250
-Wire Wire Line
-	6950 9250 6950 9750
-Wire Wire Line
-	6550 9750 6950 9750
-Wire Wire Line
-	6750 9150 7100 9150
-Wire Wire Line
-	7100 9150 7100 10000
-Wire Wire Line
-	6550 10000 7100 10000
 $Comp
 L xenir:Cap_Polarized C105
 U 1 1 62CE938D
@@ -13529,4 +13510,55 @@ Wire Wire Line
 	1500 6700 1650 6700
 Text GLabel 1500 6600 2    50   Input ~ 0
 RTS
+Wire Wire Line
+	5150 5400 5100 5400
+Wire Wire Line
+	5100 5400 5100 5600
+Wire Wire Line
+	5100 5600 4900 5600
+Wire Wire Line
+	5150 5550 4950 5550
+Wire Wire Line
+	4950 5550 4950 5400
+Wire Wire Line
+	5150 5550 5150 5700
+Connection ~ 4950 5400
+Text GLabel 13150 4450 2    50   Input ~ 0
+SCL
+Text GLabel 13150 4250 2    50   Input ~ 0
+SDA
+Wire Wire Line
+	6750 9150 7050 9150
+Wire Wire Line
+	7050 9150 7050 9000
+Wire Wire Line
+	7050 9000 7200 9000
+Wire Wire Line
+	7200 9250 6750 9250
+$Comp
+L power:+3.3V #PWR0128
+U 1 1 637CA97D
+P 4750 7600
+F 0 "#PWR0128" H 4750 7450 50  0001 C CNN
+F 1 "+3.3V" H 4750 7740 50  0000 C CNN
+F 2 "" H 4750 7600 50  0001 C CNN
+F 3 "" H 4750 7600 50  0001 C CNN
+	1    4750 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 7600 4750 7650
+Wire Wire Line
+	4750 7650 5150 7650
+$Comp
+L power:GND #PWR0129
+U 1 1 637DEFCC
+P 5150 7550
+F 0 "#PWR0129" H 5150 7300 50  0001 C CNN
+F 1 "GND" H 5155 7377 50  0000 C CNN
+F 2 "" H 5150 7550 50  0001 C CNN
+F 3 "" H 5150 7550 50  0001 C CNN
+	1    5150 7550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
