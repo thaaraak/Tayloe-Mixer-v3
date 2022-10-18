@@ -11282,17 +11282,6 @@ Connection ~ 10550 2850
 Wire Wire Line
 	10550 2850 11000 2850
 $Comp
-L xenir:LCD_I2C D1
-U 1 1 62B0F410
-P 9450 9750
-F 0 "D1" H 9728 8696 50  0000 L CNN
-F 1 "LCD_I2C" H 9728 8605 50  0000 L CNN
-F 2 "xenir:LCD_I2C" H 9450 9750 50  0001 C CNN
-F 3 "" H 9450 9750 50  0001 C CNN
-	1    9450 9750
-	0    1    1    0   
-$EndComp
-$Comp
 L power:+5V #PWR013
 U 1 1 62B1ED5C
 P 9000 9400
@@ -13575,4 +13564,17 @@ Wire Wire Line
 	4900 8550 4550 8550
 Wire Wire Line
 	4550 8550 4550 8650
+Text GLabel 8850 2550 1    50   Input ~ 0
+2.5V
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 63904F29
+P 9000 9600
+F 0 "J2" V 8872 9780 50  0000 L CNN
+F 1 "Conn_01x04" V 8963 9780 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 9000 9600 50  0001 C CNN
+F 3 "~" H 9000 9600 50  0001 C CNN
+	1    9000 9600
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
