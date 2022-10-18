@@ -11359,7 +11359,7 @@ Q_SIGNAL
 Text GLabel 7500 9000 2    50   Input ~ 0
 I_SIGNAL
 $Comp
-L xenir:Capacitor C103
+L Tayloe-Mixer-v3-rescue:Capacitor-xenir C103
 U 1 1 62B36FA7
 P 7350 9000
 F 0 "C103" H 7350 8850 28  0000 C CNN
@@ -11370,7 +11370,7 @@ F 3 "" H 7350 8850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L xenir:Capacitor C104
+L Tayloe-Mixer-v3-rescue:Capacitor-xenir C104
 U 1 1 62B37510
 P 7350 9250
 F 0 "C104" H 7350 9400 28  0000 C CNN
@@ -11389,7 +11389,7 @@ OUTL
 Text GLabel 5150 9750 2    50   Input ~ 0
 OUTR
 $Comp
-L xenir:Audio_Jack J101
+L Tayloe-Mixer-v3-rescue:Audio_Jack-xenir J101
 U 1 1 62B4F5DF
 P 3050 10300
 F 0 "J101" H 3033 10331 50  0000 C CNN
@@ -11400,7 +11400,7 @@ F 3 "" H 3050 10300 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L xenir:Capacitor C101
+L Tayloe-Mixer-v3-rescue:Capacitor-xenir C101
 U 1 1 62B508AF
 P 3800 9900
 F 0 "C101" H 3800 10050 28  0000 C CNN
@@ -11411,7 +11411,7 @@ F 3 "" H 3800 9750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L xenir:Capacitor C102
+L Tayloe-Mixer-v3-rescue:Capacitor-xenir C102
 U 1 1 62B50F6B
 P 4150 10150
 F 0 "C102" H 4150 10300 28  0000 C CNN
@@ -11422,7 +11422,7 @@ F 3 "" H 4150 10000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L xenir:Resistor R103
+L Tayloe-Mixer-v3-rescue:Resistor-xenir R103
 U 1 1 62B531E9
 P 4400 9750
 F 0 "R103" H 4400 9904 28  0000 C CNN
@@ -11433,7 +11433,7 @@ F 3 "" H 4400 9650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xenir:Resistor R104
+L Tayloe-Mixer-v3-rescue:Resistor-xenir R104
 U 1 1 62B53AF7
 P 4400 10000
 F 0 "R104" H 4400 10154 28  0000 C CNN
@@ -12459,7 +12459,7 @@ A0 5D BC 50 A9 85 B4 AB 09 F5 00 00 00 80 B6 E0 77 28 00 00 00 4E 83 44 08 00 00
 EndData
 $EndBitmap
 $Comp
-L xenir:ESP32-A1S U1
+L Tayloe-Mixer-v3-rescue:ESP32-A1S-xenir U1
 U 1 1 62B0B8E9
 P 5950 8450
 F 0 "U1" H 5950 9707 50  0000 C CNN
@@ -12487,7 +12487,7 @@ F 3 "" H 3350 7600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xenir:Cap_Polarized C105
+L Tayloe-Mixer-v3-rescue:Cap_Polarized-xenir C105
 U 1 1 62CE938D
 P 4850 9850
 F 0 "C105" H 4850 9546 28  0000 C CNN
@@ -12498,7 +12498,7 @@ F 3 "" H 4850 9900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L xenir:Cap_Polarized C106
+L Tayloe-Mixer-v3-rescue:Cap_Polarized-xenir C106
 U 1 1 62CEA988
 P 4850 10100
 F 0 "C106" H 4850 10150 28  0000 C CNN
@@ -12529,7 +12529,7 @@ SCL
 Text GLabel 6750 8250 2    50   Input ~ 0
 SDA
 $Comp
-L xenir:2N3904-SMD Q1
+L Tayloe-Mixer-v3-rescue:2N3904-SMD-xenir Q1
 U 1 1 63749133
 P 2250 7750
 F 0 "Q1" H 2341 7646 50  0000 L CNN
@@ -12544,7 +12544,7 @@ Wire Wire Line
 Wire Wire Line
 	2250 7450 2600 7450
 $Comp
-L esp32-a1s-rescue:Resistor-Xenir R9
+L Tayloe-Mixer-v3-rescue:Resistor-Xenir-esp32-a1s-rescue R9
 U 1 1 637D5201
 P 1750 7900
 F 0 "R9" H 1750 8054 28  0000 C CNN
@@ -12559,7 +12559,7 @@ DTR
 Wire Wire Line
 	1400 7900 1500 7900
 $Comp
-L esp32-a1s-rescue:Resistor-Xenir R10
+L Tayloe-Mixer-v3-rescue:Resistor-Xenir-esp32-a1s-rescue R10
 U 1 1 63814A82
 P 1750 8650
 F 0 "R10" H 1750 8804 28  0000 C CNN
@@ -12574,7 +12574,7 @@ RTS
 Wire Wire Line
 	1400 8650 1450 8650
 $Comp
-L xenir:2N3904-SMD Q2
+L Tayloe-Mixer-v3-rescue:2N3904-SMD-xenir Q2
 U 1 1 63824306
 P 2250 8800
 F 0 "Q2" H 2341 8604 50  0000 L CNN
@@ -13566,7 +13566,7 @@ F 3 "~" H 9000 9600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L xenir:Pad J3
+L Tayloe-Mixer-v3-rescue:Pad-xenir J3
 U 1 1 6394DBBE
 P 11450 2700
 F 0 "J3" H 11382 2504 50  0000 R CNN
@@ -13578,7 +13578,7 @@ F 3 "" H 11450 2700 50  0001 C CNN
 $EndComp
 Connection ~ 11350 2550
 $Comp
-L xenir:Pad J5
+L Tayloe-Mixer-v3-rescue:Pad-xenir J5
 U 1 1 6394E321
 P 11450 2900
 F 0 "J5" H 11382 2704 50  0000 R CNN

@@ -12609,18 +12609,6 @@ Wire Wire Line
 Wire Wire Line
 	2250 8850 2250 9100
 $Comp
-L Connector:Jack-DC J3
-U 1 1 633DF648
-P 11650 2650
-F 0 "J3" H 11707 2975 50  0000 C CNN
-F 1 "Jack-DC" H 11707 2884 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 11700 2610 50  0001 C CNN
-F 3 "~" H 11700 2610 50  0001 C CNN
-	1    11650 2650
-	-1   0    0    -1  
-$EndComp
-Connection ~ 11350 2550
-$Comp
 L power:GND #PWR0114
 U 1 1 6342C42B
 P 11350 2850
@@ -13577,4 +13565,33 @@ F 3 "~" H 9000 9600 50  0001 C CNN
 	1    9000 9600
 	0    1    1    0   
 $EndComp
+$Comp
+L xenir:Pad J3
+U 1 1 6394DBBE
+P 11450 2700
+F 0 "J3" H 11382 2504 50  0000 R CNN
+F 1 "Pad" H 11382 2595 50  0000 R CNN
+F 2 "Xenir:Pad" H 11450 2700 50  0001 C CNN
+F 3 "" H 11450 2700 50  0001 C CNN
+	1    11450 2700
+	-1   0    0    1   
+$EndComp
+Connection ~ 11350 2550
+$Comp
+L xenir:Pad J5
+U 1 1 6394E321
+P 11450 2900
+F 0 "J5" H 11382 2704 50  0000 R CNN
+F 1 "Pad" H 11382 2795 50  0000 R CNN
+F 2 "Xenir:Pad" H 11450 2900 50  0001 C CNN
+F 3 "" H 11450 2900 50  0001 C CNN
+	1    11450 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3250 9750 3250 9850
+Connection ~ 3250 9850
+Wire Wire Line
+	3250 10050 3250 9950
+Connection ~ 3250 9950
 $EndSCHEMATC
