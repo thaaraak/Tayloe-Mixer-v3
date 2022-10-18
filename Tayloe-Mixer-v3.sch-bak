@@ -864,18 +864,6 @@ Wire Wire Line
 	6000 4300 7000 4300
 Connection ~ 4100 2650
 Connection ~ 4400 2650
-Wire Wire Line
-	10350 4250 11100 4250
-Wire Wire Line
-	11100 4250 11100 4150
-Wire Wire Line
-	11100 4150 11750 4150
-Wire Wire Line
-	11750 4550 11100 4550
-Wire Wire Line
-	11100 4550 11100 4450
-Wire Wire Line
-	11100 4450 10350 4450
 $Comp
 L Tayloe-Mixer-v2-rescue:BNC-Xenir J1
 U 1 1 5F44E5DC
@@ -11341,10 +11329,6 @@ F 3 "~" H 3900 8810 50  0001 C CNN
 	1    3900 8550
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4200 8450 5150 8450
-Wire Wire Line
-	4200 8650 5150 8650
 $Comp
 L power:GND #PWR0111
 U 1 1 62B256F1
@@ -11381,10 +11365,6 @@ Wire Wire Line
 	3400 8450 3400 8100
 Wire Wire Line
 	3400 8100 4650 8100
-Wire Wire Line
-	4650 8100 4650 8250
-Wire Wire Line
-	4650 8250 5150 8250
 Text GLabel 7500 9250 2    50   Input ~ 0
 Q_SIGNAL
 Text GLabel 7500 9000 2    50   Input ~ 0
@@ -13561,4 +13541,38 @@ F 3 "" H 5150 7550 50  0001 C CNN
 	1    5150 7550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	10900 4150 10900 4450
+Wire Wire Line
+	10900 4450 10350 4450
+Wire Wire Line
+	10900 4150 11750 4150
+Wire Wire Line
+	11000 4550 11000 4250
+Wire Wire Line
+	11000 4250 10350 4250
+Wire Wire Line
+	11000 4550 11750 4550
+Text GLabel 5150 8050 0    50   Input ~ 0
+IO0
+Wire Wire Line
+	4650 8650 5150 8650
+Wire Wire Line
+	4650 8100 4650 8650
+Wire Wire Line
+	4550 8650 4200 8650
+Wire Wire Line
+	4200 8450 4800 8450
+Wire Wire Line
+	4800 8450 4800 8250
+Wire Wire Line
+	4800 8250 5150 8250
+Wire Wire Line
+	5150 8450 4900 8450
+Wire Wire Line
+	4900 8450 4900 8550
+Wire Wire Line
+	4900 8550 4550 8550
+Wire Wire Line
+	4550 8550 4550 8650
 $EndSCHEMATC
