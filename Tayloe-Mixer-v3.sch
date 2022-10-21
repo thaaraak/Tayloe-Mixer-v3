@@ -2319,7 +2319,7 @@ Wire Wire Line
 	7050 2250 7050 2650
 Connection ~ 7050 2650
 $Comp
-L preamp-mar6-rescue:Inductor-xenir L201
+L Tayloe-Mixer-v3-rescue:Inductor-xenir-preamp-mar6-rescue L201
 U 1 1 62D06805
 P 7050 2100
 F 0 "L201" V 7004 2153 50  0000 L CNN
@@ -2330,7 +2330,7 @@ F 3 "" H 7050 2200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L preamp-mar6-rescue:Resistor-xenir R201
+L Tayloe-Mixer-v3-rescue:Resistor-xenir-preamp-mar6-rescue R201
 U 1 1 62D0720F
 P 7050 1600
 F 0 "R201" V 7021 1668 28  0000 L CNN
@@ -2341,7 +2341,7 @@ F 3 "" H 7050 1500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L preamp-mar6-rescue:Capacitor-xenir C203
+L Tayloe-Mixer-v3-rescue:Capacitor-xenir-preamp-mar6-rescue C203
 U 1 1 62D08B85
 P 7600 1550
 F 0 "C203" V 7571 1665 28  0000 L CNN
@@ -2352,7 +2352,7 @@ F 3 "" H 7600 1400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L preamp-mar6-rescue:Cap_Polarized-xenir C204
+L Tayloe-Mixer-v3-rescue:Cap_Polarized-xenir-preamp-mar6-rescue C204
 U 1 1 62D09564
 P 8150 1550
 F 0 "C204" V 8121 1568 28  0000 L CNN
@@ -3115,7 +3115,7 @@ F 3 "" H 6600 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L preamp-mar6-rescue:MAR6-xenir U201
+L Tayloe-Mixer-v3-rescue:MAR6-xenir-preamp-mar6-rescue U201
 U 1 1 62D05110
 P 6650 2550
 F 0 "U201" H 6700 2450 50  0000 L CNN
@@ -6158,7 +6158,7 @@ DD 00 00 00 00 49 45 4E 44 AE 42 60 82
 EndData
 $EndBitmap
 $Comp
-L xenir:ESP32-A1S U1
+L Tayloe-Mixer-v3-rescue:ESP32-A1S-xenir U1
 U 1 1 6363210B
 P 5950 8450
 F 0 "U1" H 5950 9707 50  0000 C CNN
